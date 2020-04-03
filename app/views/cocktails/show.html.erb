@@ -1,7 +1,7 @@
 <div class="container">
   <div class="card">
     <h2><%= @cocktail.name %></h2>
-    <%= cl_image_tag @cocktail.photo.key, width: 400, crop: :fill %>
+    <%= cl_image_tag @cocktail.image_url.key, width: 400, crop: :fill %>
     <% @cocktail.doses.each do |dose| %>
     <h4><%= dose.ingredient.name %></h4>
     <%= dose.description %>
