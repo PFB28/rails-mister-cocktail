@@ -1,5 +1,8 @@
+<div class="cards">
 <% @cocktails.each do |cocktail| %>
-    <div class="cocktail-card">
-      <%= link_to cocktail.name, cocktail %>
-    </div>
-<% end %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
+    <%= link_to cocktail.name, cocktail %>
+  </div>
+  <% end %>
+</div>
+
